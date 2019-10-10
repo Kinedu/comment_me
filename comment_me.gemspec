@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.version     = CommentMe::VERSION
   spec.authors     = ["Armando Alejandre"]
   spec.email       = ["armando1339@gmail.com"]
-  spec.homepage    = ""
+  spec.homepage    = "https://www.kinedu.com/"
+  spec.metadata    = { "source_code_uri" => "https://github.com/Kinedu/comment_me" }
   spec.summary     = "Attached comments for ActiveRecord models"
   spec.description = "Attached comments for ActiveRecord models"
   spec.license     = "MIT"
