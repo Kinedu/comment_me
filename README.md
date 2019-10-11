@@ -2,7 +2,7 @@
 
 Attached comments for ActiveRecord models
 
-[![Build Status](https://travis-ci.org/Kinedu/comment_me.svg?branch=master)](https://travis-ci.org/Kinedu/comment_me)
+[![Build Status](https://travis-ci.org/Kinedu/comment_me.svg?branch=master)](https://travis-ci.org/Kinedu/comment_me) [![Coverage Status](https://coveralls.io/repos/github/Kinedu/comment_me/badge.svg?branch=master)](https://coveralls.io/github/Kinedu/comment_me?branch=master)
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -22,6 +22,12 @@ In the root directory:
 ```bash
 $ rails generate comment_me
 ```
+
+Then migrate the database:
+
+```bash
+$ rails db:migrate
+``
 
 ## Usage
 
