@@ -1,3 +1,3 @@
 module CommentMe
-  VERSION = '0.1.0alpha'
+  VERSION = '0.1.1alpha'
 end
