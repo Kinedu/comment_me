@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    comment_me (0.1.0)
+    comment_me (0.1.0alpha)
       rails (~> 5.2.2, >= 5.2.2.1)
 
 GEM
