@@ -27,7 +27,7 @@ Then migrate the database:
 
 ```bash
 $ rails db:migrate
-``
+```
 
 ## Usage
 
