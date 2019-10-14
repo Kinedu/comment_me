@@ -9,6 +9,7 @@ module CommentMe
 
       included do
         has_many :comments, -> { includes :comments }, as: :entity, dependent: :destroy
+        accepts_nested_attributes_for :comments
       end
     end
 
