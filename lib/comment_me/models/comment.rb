@@ -1,13 +1,15 @@
 class Comment < ActiveRecord::Base
 
   # => associations
-  belongs_to :entity, polymorphic: true, optional: false
+  belongs_to :entity, polymorphic: true
   belongs_to :comment, optional: true
   has_many :comments, dependent: :destroy
 
   # => Validations
   validates_presence_of :emitter, :message
-  validate :entity_existence, if: :entity_type?
+
+  # => callback
+  after_create :entity_existence
 
   # => *
   def entity_exist?
@@ -24,10 +26,7 @@ class Comment < ActiveRecord::Base
   # => *
   def entity_existence
     unless entity_exist?
-      errors.add(
-        :entity,
-        "#{entity_type} doesn't have association with Comment or there's no record in #{entity_type} witn id=#{entity_id}"
-      )
+      raise ActiveRecord::Rollback
     end
   end
 end
