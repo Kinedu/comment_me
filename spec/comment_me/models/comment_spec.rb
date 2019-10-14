@@ -24,7 +24,7 @@ RSpec.describe Comment, type: :model do
   end
 
   context 'associations' do
-    it { should belong_to(:entity) }
+    it { should belong_to(:entity).optional }
     it { should belong_to(:comment).optional }
     it { should have_many(:comments).dependent(:destroy) }
   end

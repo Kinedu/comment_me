@@ -38,7 +38,7 @@ RSpec.describe CommentsController, type: :controller do
             comment: {
               entity_type: "Article",
               entity_id: 100,
-              emitter: "Armando Alejandre",
+              emitter: nil,
               message: "Lo que SEA"
             }
           }
